@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Ejakov | Portfolio</title>
+  <meta name="description" content="Daniel Ejakov — Data Science student. Research + projects in video analysis, data pipelines, and ML." />
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --muted:#9ca3af;
+      --text:#e5e7eb;
+      --line:#1f2937;
+      --accent:#60a5fa;
+      --accent2:#34d399;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(96,165,250,0.18), transparent 55%),
+                  radial-gradient(900px 700px at 80% 10%, rgba(52,211,153,0.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
+    .top{
+      display:flex; gap:18px; flex-wrap:wrap;
+      align-items:flex-start; justify-content:space-between;
+      padding:22px; border:1px solid var(--line); border-radius:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    }
+    .name{
+      font-size:34px; margin:0 0 6px 0; letter-spacing:0.2px;
+    }
+    .tagline{margin:0; color:var(--muted); max-width:650px}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      display:inline-block;
+      padding:9px 12px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background: rgba(17,24,39,0.6);
+      color:var(--text);
+      font-size:14px;
+    }
+    .btn:hover{border-color:rgba(96,165,250,0.55); text-decoration:none}
+    .btn.primary{
+      border-color:rgba(96,165,250,0.55);
+      background: rgba(96,165,250,0.12);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:18px;
+    }
+    @media (min-width: 860px){
+      .grid{grid-template-columns: 1.15fr 0.85fr;}
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background: rgba(17,24,39,0.6);
+      padding:18px;
+    }
+    h2{
+      margin:0 0 10px 0;
+      font-size:18px;
+      letter-spacing:0.2px;
+    }
+    h3{
+      margin:0 0 8px 0;
+      font-size:16px;
+    }
+    .muted{color:var(--muted)}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      font-size:12px;
+      padding:5px 9px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--text);
+      background: rgba(255,255,255,0.02);
+    }
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .section{margin-top:18px}
+    .project{
+      display:flex; flex-direction:column; gap:10px;
+      padding:16px; border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,0.12);
+      margin-top:12px;
+    }
+    .projhead{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    }
+    .projtitle{margin:0; font-size:16px}
+    .projmeta{font-size:13px; color:var(--muted)}
+    .projlinks{display:flex; gap:10px; flex-wrap:wrap; margin-top:2px}
+    .small{font-size:13px}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .gallery{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    footer{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+    code.inline{
+      background: rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:2px 6px;
+      border-radius:8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- HERO / HEADER -->
+    <div class="top">
+      <div>
+        <h1 class="name">Daniel Ejakov</h1>
+        <p class="tagline">
+          Data science student with a strong theoretical background and hands-on experience in data science,
+          programming, data collection, and field work.
+        </p>
+
+        <div class="links">
+          <a class="btn primary" href="mailto:ejakovda@msu.edu">Email</a>
+          <a class="btn" href="tel:13137279416">Call</a>
+          <a class="btn" href="https://www.linkedin.com/in/daniel-ejakov" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/dANeJ22" target="_blank" rel="noopener">GitHub</a>
+		  <a class="btn" href="EjakovDaniel2026.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+          <!-- <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a> -->
+        </div>
+      </div>
+
+      <div class="card" style="max-width:360px; width:100%;">
+        <h2>Quick Info</h2>
+        <div class="small">
+          <div><span class="muted">Email:</span> <a href="mailto:ejakovda@msu.edu">ejakovda@msu.edu</a></div>
+          <div><span class="muted">Phone:</span> <a href="tel:13137279416">313-727-9416</a></div>
+          <div><span class="muted">Location:</span> East Lansing, MI</div>
+        </div>
+        <div class="pillrow" aria-label="Skills">
+          <span class="pill">Python</span>
+          <span class="pill">Linux/Unix</span>
+          <span class="pill">R</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">scikit-learn</span>
+          <span class="pill">PCA</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Seaborn</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <!-- LEFT COLUMN -->
+      <div>
+
+        <div class="card section">
+          <h2>Featured Project</h2>
+
+          <div class="project">
+            <div class="projhead">
+              <div>
+                <h3 class="projtitle">Video Analysis: Tick Population Differentiation (ODU) — 2025</h3>
+                <div class="projmeta">End-to-end pipeline to track movement behavior and compare populations.</div>
+              </div>
+              <div class="projmeta">Python • Unix/Linux • R</div>
+            </div>
+
+            <div class="small muted">
+              Public repo contains sanitized code + example outputs (no raw videos / sensitive metadata).
+            </div>
+
+            <div class="projlinks small">
+              <a href="https://github.com/dANeJ22/tick-movement-pipeline" target="_blank" rel="noopener">Repo</a>
+              <a href="https://github.com/dANeJ22/tick-movement-pipeline" target="_blank" rel="noopener">Write-up</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="small">
+              <b>What I did</b>
+              <ul>
+                <li>Developed an end-to-end video analysis pipeline to quantify movement patterns of understudied tick species.</li>
+                <li>Applied statistical techniques and dimensionality reduction (<code class="inline">PCA</code>) to extract interpretable insights.</li>
+                <li>Maintained a multi-year dataset with careful metadata recording and quality control.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Lab Setup Photos</h2>
+          <div class="muted small">Photos from the recording setup used for standardized movement capture.</div>
+
+          <div class="gallery" aria-label="Lab setup gallery">
+            <img src="assets/lab-setup-1.jpg" alt="Lab setup photo 1"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+            <img src="assets/lab-setup-2.jpg" alt="Lab setup photo 2"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Analysis Output (Graphs)</h2>
+          <div class="muted small">Example visual outputs generated from my tick movement analysis pipeline.</div>
+
+          <div class="gallery" aria-label="Tick analysis graphs">
+            <img src="assets/graphs/tick-trajectory.png" alt="Example tick trajectory plot"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+            <img src="assets/graphs/total-distance-by-species-and-sex.png" alt="Total distance by species and sex"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+            <img src="assets/graphs/avg-speed-by-species-and-sex.png" alt="Average speed by species and sex"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+            <img src="assets/graphs/distance-by-species-and-sex.png" alt="Distance by species and sex"
+                 style="width:100%; border-radius:14px; border:1px solid var(--line);" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+
+        <div class="card section">
+          <h2>Research Experience</h2>
+
+          <h3 style="margin-top:0;">Research Assistant — Old Dominion University</h3>
+          <div class="muted small">Summers 2024–2025</div>
+
+          <ul>
+            <li>Designed and implemented standardized protocols for specimen collection, maintenance, recording, and tracking.</li>
+            <li>Collected specimens across multiple field sites (VA, MD, DE, NC), managing transport and metadata recording.</li>
+            <li>Processed samples in a multi-year database and developed mathematical models to analyze movement behavior.</li>
+            <li>Supervised a small team to ensure accurate data collection, troubleshoot protocol issues, and iterate experimental design.</li>
+            <li>Tested and evaluated <b>TickBot</b> (robotic tick control): collected performance data, analyzed effectiveness across environments, and documented limitations + improvements.</li>
+          </ul>
+        </div>
+
+        <div class="card section">
+          <h2>Education</h2>
+          <div class="small">
+            <b>Honors College, Michigan State University</b><br/>
+            East Lansing, MI<br/>
+            <span class="muted">2023–2025</span>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Contact</h2>
+          <div class="small">
+            Best way to reach me: <a href="mailto:ejakovda@msu.edu">ejakovda@msu.edu</a><br/>
+            LinkedIn: <a href="https://www.linkedin.com/in/daniel-ejakov" target="_blank" rel="noopener">daniel-ejakov</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Daniel Ejakov • Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
